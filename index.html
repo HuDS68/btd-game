@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloon Defense</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; text-align: center; background: #f0f0f0; }
+    canvas { background: #fff; border: 2px solid #333; display: block; margin: 10px auto; }
+    #stats { font-size: 18px; margin: 10px; }
+    button { margin: 5px; padding: 10px 15px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>🎯 Bloon Defense (Inspired)</h1>
+  <div id="stats">
+    <span id="money">💰 Money: 100</span> |
+    <span id="lives">❤️ Lives: 10</span> |
+    <span id="wave">🌊 Wave: 1</span>
+  </div>
+  <button onclick="selectTower()">Place Tower ($50)</button>
+  <button onclick="upgradeTower()">Upgrade Selected Tower ($30)</button>
+  <canvas id="game" width="800" height="600"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
